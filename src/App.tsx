@@ -8,7 +8,7 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 
 function App(): JSX.Element {
   const { pathname } = useLocation();
-
+  debugger;
   return (
     <>
       <Routes>
