@@ -9,17 +9,19 @@ interface Props {
 }
 
 const CredentialsValidation = ({ children }: Props) => {
+  debugger;
   const token = localStorage.getItem("token");
   const logged = useAppSelector((state) => state.user.logged);
+  debugger;
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
-
+  debugger;
   useEffect(() => {
     if (!logged) {
       navigate("/login");
     }
   }, [logged, navigate]);
-
+  debugger;
   try {
     const userData = jwtDecode<any>(token as string);
 

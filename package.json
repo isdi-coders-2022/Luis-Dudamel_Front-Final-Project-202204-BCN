@@ -72,6 +72,7 @@
       "src/**/*.ts",
       "!src/index.tsx",
       "!src/App.tsx",
+      "!src/mocks/**",
       "!src/theme.ts",
       "!src/**/*.test.ts",
       "!src/reportWebVitals.ts",
